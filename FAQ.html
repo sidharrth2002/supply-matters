@@ -9,15 +9,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,300;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-<div id="header">
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a class="active" href="#FAQ">FAQ</a></li>
-    </ul>
-</div>
+    <div id="header">
+        <span class="nav-icon" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a class="active" href="FAQ.html">FAQ</a></li>
+        </ul>
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="projects.html">Projects</a>
+                <a href="services.html">Services</a>
+                <a class="active" href="#FAQ">FAQ</a>
+            </div>
+          </div>
+    </div>
 <div id="content">
 <div id="FAQ">
     <h1>We're here to help!</h1>
@@ -46,5 +57,6 @@
         <a href="https://www.facebook.com/Supply-Matters-Sdn-Bhd-130729460306403/" target="_blank"><img src="assets/img/Facebook-icon.svg" width="70px"></a>
     </div>
 </div>
+<script src="assets/js/script.js"></script>
 </body>
 </html>

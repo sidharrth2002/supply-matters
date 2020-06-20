@@ -10,13 +10,24 @@
 </head>
 <body>
     <div id="header">
+        <span class="nav-icon" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a class="active" href="#about">About</a></li>
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="about.html">About</a></li>
             <li><a href="projects.html">Projects</a></li>
             <li><a href="services.html">Services</a></li>
             <li><a href="FAQ.html">FAQ</a></li>
         </ul>
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="index.html">Home</a>
+                <a class="active" href="#about">About</a>
+                <a href="projects.html">Projects</a>
+                <a href="services.html">Services</a>
+                <a href="FAQ.html">FAQ</a>
+            </div>
+          </div>
     </div>
     <div id="content">
         <div id="about">
@@ -51,5 +62,6 @@
             <a href="https://www.facebook.com/Supply-Matters-Sdn-Bhd-130729460306403/" target="_blank"><img src="assets/img/Facebook-icon.svg" width="70px"></a>
         </div>
     </div>
+    <script src="assets/js/script.js"></script>
     </body>
 

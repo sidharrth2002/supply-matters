@@ -9,15 +9,25 @@
 </head>
 <body>
     <div id="header">
+        <span class="nav-icon" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
         <ul>
-            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="#home">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="projects.html">Projects</a></li>
-            <li><a class="active" href="#services">Services</a></li>
+            <li><a href="services.html">Services</a></li>
             <li><a href="FAQ.html">FAQ</a></li>
         </ul>
-    </div>
-    <div id="content">
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="projects.html">Projects</a>
+                <a class="active" href="#services">Services</a>
+                <a href="FAQ.html">FAQ</a>
+            </div>
+          </div>
+    </div>    <div id="content">
         <div id="services">
             <h1>Our Services</h1>
         <div class="slideshow-container">
@@ -164,5 +174,6 @@
       myTimer = setInterval(function(){plusSlides(slideIndex)}, 2000);
     }
         </script>
+        <script src="assets/js/script.js"></script>
 </body>
 </html>

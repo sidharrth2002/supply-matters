@@ -9,16 +9,16 @@ body {
     /* background-size: cover; */
 }
 
-#header {
-    background-color: black; !important
+/* #header { */
+    /* background-color: black; !important */
     /* background-color: #ffb826; */
     /* background-color: rgb(125, 52, 235); */
     /* color: white; */
-    width: 100%;
+    /* width: 100%; */
     /* min-height: 50px; */
     /* background-color: white; */
-    opacity: 0.7;
-}
+    /* opacity: 0.7; */
+/* } */
 
 .about-heading h1 {
     font-size: 4rem;
