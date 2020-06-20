@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
+    <link href="assets/css/index.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/services.css" rel="stylesheet" type="text/css">
+    <title>Supply Matters</title>
+</head>
+<body>
+    <div id="header">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a class="active" href="#services">Services</a></li>
+            <li><a href="FAQ.html">FAQ</a></li>
+        </ul>
+    </div>
+    <div id="content">
+        <div id="services">
+            <h1>Our Services</h1>
+        <div class="slideshow-container">
+            <div class="slideshow-inner">
+                <div class="mySlides fade">
+                    <img src='./assets/img/Cargo.jpg' style='width: 100%;' alt="sally lightfoot crab"/>
+                    <div class="text">Test</div>
+                </div>
+                <div class="mySlides fade">
+                    <img src='./assets/img/Cargo.jpg' style='width: 100%;' alt="fighting nazca boobies"/>
+                    <div class="text">A scuffle between two Nazca Boobies</div>
+                </div>
+                
+                <div class="mySlides fade">
+                    <img src='./assets/img/Cargo.jpg' style='width: 100%;' alt="otovalo waterfall"/>
+                    <div class="text">A waterfall discovered on a hike in Otovalo</div>
+                </div>
+                
+                <div class="mySlides fade">
+                    <img src='./assets/img/Cargo.jpg' style='width: 100%;' alt="pelican"/>
+                    <div class="text">Pelican</div>
+                </div>
+                
+            </div>
+        </div>
+        <br/>
+        <div style='text-align: center;'>
+            <span class="dot" onclick='currentSlide(1)'></span>
+            <span class="dot" onclick='currentSlide(2)'></span>
+            <span class="dot" onclick='currentSlide(3)'></span>
+            <span class="dot" onclick='currentSlide(4)'></span>
+        </div>
+        <div id="projects-grid">
+            <div class="project">
+                Project1
+            </div>
+            <div class="project">
+                Project2
+            </div>
+            <div class="project">
+                Project3
+            </div>
+            <div class="project">
+                Project4
+            </div>
+            <div class="project">
+                Project5
+            </div>
+            <div class="project">
+                Project6
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <div id="footer">
+        <div class="footer-element">
+            <img src="assets/img/Location-icon.gif" width="100px">
+            <br>
+                <p>No. 8, Jalan TIB 3/5, Taman Industri Bolton, 68100 Batu Caves, Selangor, Malaysia</p>
+        </div>
+        <div class="footer-element">
+            <img src="assets/img/Email-icon.gif" width="100px">
+            <br>
+            <p><a href="mailto:admin@suppmatters.com">admin@suppmatters.com</a></p>
+        </div>
+        <div class="footer-element">
+            <img src="assets/img/Phone-icon.gif" width="100px">
+            <br>
+            <p>+603-6185 8235</p>
+        </div>
+        <div class="footer-element social">
+            <a href="https://www.facebook.com/Supply-Matters-Sdn-Bhd-130729460306403/" target="_blank"><img src="assets/img/Facebook-icon.svg" width="70px"></a>
+        </div>
+    </div>        
+        <script>
+            var slideIndex = 1;
+    
+    var myTimer;
+    
+    var slideshowContainer;
+    
+    window.addEventListener("load",function() {
+        showSlides(slideIndex);
+        myTimer = setInterval(function(){plusSlides(1)}, 2000);
+      
+        //COMMENT OUT THE LINE BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
+        // slideshowContainer = document.getElementsByClassName('slideshow-inner')[0];
+      
+        //UNCOMMENT OUT THE LINE BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
+        // slideshowContainer = document.getElementsByClassName('slideshow-container')[0];
+      
+        slideshowContainer.addEventListener('mouseenter', pause)
+        slideshowContainer.addEventListener('mouseleave', resume)
+    })
+    
+    // NEXT AND PREVIOUS CONTROL
+    function plusSlides(n){
+      clearInterval(myTimer);
+      if (n < 0){
+        showSlides(slideIndex -= 1);
+      } else {
+       showSlides(slideIndex += 1); 
+      }
+      
+      //COMMENT OUT THE LINES BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
+      
+      if (n === -1){
+        myTimer = setInterval(function(){plusSlides(n + 2)}, 2000);
+      } else {
+        myTimer = setInterval(function(){plusSlides(n + 1)}, 2000);
+      }
+    }
+    
+    //Controls the current slide and resets interval if needed
+    function currentSlide(n){
+      clearInterval(myTimer);
+      myTimer = setInterval(function(){plusSlides(n + 1)}, 2000);
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n){
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active-dot", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active-dot";
+    }
+    
+    pause = () => {
+      clearInterval(myTimer);
+    }
+    
+    resume = () =>{
+      clearInterval(myTimer);
+      myTimer = setInterval(function(){plusSlides(slideIndex)}, 2000);
+    }
+        </script>
+</body>
+</html>

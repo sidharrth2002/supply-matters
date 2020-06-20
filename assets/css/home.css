@@ -1,5 +1,5 @@
 body {
-    background-image: url('../img/Home-background2.jpg');
+    background-image: url('../img/Home-background.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -7,11 +7,6 @@ body {
     /* background-position: center;
     background-repeat: repeat-x; */
     /* background-size: cover; */
-
-}
-
-li:nth-of-type(1) {
-    border-bottom: 2px solid white;
 }
 
 /*Home*/
@@ -104,15 +99,11 @@ li:nth-of-type(1) {
 }
 
 @media screen and (max-width: 767px) {
-    #content {
-        margin-top: 70px;
-    }
-
     #home h1 {
-        font-size: 4rem;
+        font-size: 4rem; !important
     }
     #description {
-        display: block;
+        /* display: block; */
         width: 100%;
     }
     .description-element {

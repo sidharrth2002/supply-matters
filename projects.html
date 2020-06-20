@@ -13,9 +13,9 @@
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#FAQ">FAQ</a></li>
+        <li><a class="active" href="#projects">Projects</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="FAQ.html">FAQ</a></li>
     </ul>
     </div>
     <div id="content">
@@ -51,26 +51,32 @@
       </div>
     </div>
     <div id="footer">
-        <h2>Get in Contact</h2>
-        <form>
-        <input type="text" placeholder="Name:">
-        </br>
-        <input type="email" placeholder="Email:">
-        </br>
-        <input type="text" placeholder="Subject:">
-        </br>
-        <input type="text" placeholder="Message:">
-        </br>
-        <button type="submit">Submit</button>   
-        </form>
-    </div>
-    <script>
+      <div class="footer-element">
+          <img src="assets/img/Location-icon.gif" width="100px">
+          <br>
+              <p>No. 8, Jalan TIB 3/5, Taman Industri Bolton, 68100 Batu Caves, Selangor, Malaysia</p>
+      </div>
+      <div class="footer-element">
+          <img src="assets/img/Email-icon.gif" width="100px">
+          <br>
+          <p><a href="mailto:admin@suppmatters.com">admin@suppmatters.com</a></p>
+      </div>
+      <div class="footer-element">
+          <img src="assets/img/Phone-icon.gif" width="100px">
+          <br>
+          <p>+603-6185 8235</p>
+      </div>
+      <div class="footer-element social">
+          <a href="https://www.facebook.com/Supply-Matters-Sdn-Bhd-130729460306403/" target="_blank"><img src="assets/img/Facebook-icon.svg" width="70px"></a>
+      </div>
+  </div>
+      <script>
         var acc = document.getElementsByClassName("accordion");
         var i;
         
         for (i = 0; i < acc.length; i++) {
           acc[i].addEventListener("click", function() {
-            this.classList.toggle("active");
+            this.classList.toggle("active-dropdown");
             var panel = this.nextElementSibling;
             if (panel.style.maxHeight) {
               panel.style.maxHeight = null;

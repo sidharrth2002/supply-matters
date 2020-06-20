@@ -11,11 +11,11 @@
 <body>
 <div id="header">
     <ul>
-        <li><a href="#home">Home</a></li>
+        <li><a class="active" href="#home">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="projects.html">Projects</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#FAQ">FAQ</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="FAQ.html">FAQ</a></li>
     </ul>
 </div>
 <div id="content">
@@ -40,22 +40,39 @@
     </div>
 </div>
 <div id="footer">
-    <h2>Get in Contact</h2>
-    <h3>Footer under service- This is only a sample form</h3>
-    <form>
-        <input type="text" placeholder="Name:">
-    </br>
-        <input type="email" placeholder="Email:">
-    </br>
-
-        <input type="text" placeholder="Subject:">
-    </br>
-    <input type="text" placeholder="Message:">
-</br>
-
-    <button type="submit">Submit</button>   
-    </form>
+    <div class="footer-element">
+        <img src="assets/img/Location-icon.gif" width="100px">
+        <br>
+            <p>No. 8, Jalan TIB 3/5, Taman Industri Bolton, 68100 Batu Caves, Selangor, Malaysia</p>
+    </div>
+    <div class="footer-element">
+        <img src="assets/img/Email-icon.gif" width="100px">
+        <br>
+        <p><a href="mailto:admin@suppmatters.com">admin@suppmatters.com</a></p>
+    </div>
+    <div class="footer-element">
+        <img src="assets/img/Phone-icon.gif" width="100px">
+        <br>
+        <p>+603-6185 8235</p>
+    </div>
+    <div class="footer-element social">
+        <a href="https://www.facebook.com/Supply-Matters-Sdn-Bhd-130729460306403/" target="_blank"><img src="assets/img/Facebook-icon.svg" width="70px"></a>
+    </div>
 </div>
-<script src="assets/js/script.js"></script>
+<script>
+    var i = 0;
+    var txt = 'Sourcing. Consolidation. Shipping.'; /* The text */
+    var speed = 60; /* The speed/duration of the effect in milliseconds */
+
+    function typeWriter() {
+        if (i < txt.length) {
+        document.getElementById("animated-subtitle").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+    }
+}
+//document.body.onclick = typeWriter;
+typeWriter();
+</script>
 </body>
 </html>
