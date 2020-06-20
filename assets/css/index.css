@@ -139,19 +139,31 @@ flex: 1;
     align-items: center;
 }
 
+/* For the mobile nav-bar */
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+    }
+
 @media screen and (max-width: 767px) {
-    li a {
+    /* li a {
         font-size: 1rem;
     }
     li {
         margin: 0.5rem;
-    }
+    } */
     h1 {
         font-size: 3rem;
     }
     .footer-element {
         width: 100%;
     }
+
+    /* Mobile nav-bar */
     .nav-icon {
         display: block;
     }

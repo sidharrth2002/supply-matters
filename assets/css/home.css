@@ -53,6 +53,10 @@ body {
     color: white;
 }
 
+#home button a {
+    text-decoration: none;
+}
+
 /* Description */
 #description {
     padding: 10px 0;
