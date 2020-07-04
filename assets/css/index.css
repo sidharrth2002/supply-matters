@@ -31,7 +31,7 @@ min-height: 50px;
 
 ul {
 display: block;
-width: fit-content;
+max-width: max-content;
 margin: 0 auto;
 padding: 20px;
 }
