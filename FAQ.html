@@ -32,9 +32,39 @@
 <div id="content">
 <div id="FAQ">
     <h1>We're here to help!</h1>
+    <h2>Frequently asked questions (FAQs)</h2>
+    <div id="dropdowns">
+            <button class="accordion">What's the cost of shipping?</button>
+            <div class="panel">
+            <p>Your cost of shipping depends the type of cargo, your quantity and the destination you want to ship your cargo. If you are planning to ship a full container of cargo (FCL) the rates will be different if its less than a container (LCL). If its is LCL cargo we will consolidate your cargo with other consignee's cargo and the rates will be based on per cubic meter. Please get in touch with us with the details of your cargo for a full quote. 
+            </p>
+            </div>
 
+            <button class="accordion">How do I pack my goods for shipping?
+            </button>
+            <div class="panel">
+            <p>'All of the items shipped LCL console must be boxed or crated. If you don’t have proper boxes we provide the service of packing and crating at an additional cost. If the items will be shipped in a full container, not everything has to be boxed; but it will be up to your own discretion to prevent any damages from occurring. We will be able to advice you on packaging if you need our advice.
+            </p>
+            </div>
 
+            <button class="accordion">How long will it take for my shipment to arrive?</button>
+            <div class="panel">
+            <p>​If it is a full container we can ship on any of the vessels to Male, Maldives on a weekly basis. If your cargo is less than a container it will have to go in an LCL container. We have our own LCL boxes to Male’, Maldives every 2-3 weeks or sometimes we use third party LCL console to ship LCL cargo. Usually the sailing time to Male, Maldives from Port Klang is 10 – 14 days. If you contact our office we will be able to provide you with an estimated transit time.
+            </p>
+            </div>
 
+            <button class="accordion">How do I do the customs clearance?</button>
+            <div class="panel">
+            <p>A few days prior to arrival date of the ship, our agent will send you an arrival notice confirming the arrival of your goods, vessel, name etc. Please keep in mind you will have to have the goods cleared through customs before you can pick up. Our quote to you is usually CIF destination port. The customs duties, port charges and clearance fees applicable is to be paid at the destination.
+            </p>
+            </div>
+
+            <button class="accordion">What are the documents I will need to clear my goods?</button>
+            <div class="panel">
+            <p>You will need the following documents to clear your cargo. 1. Commercial invoice. 2. Packing list. 3. Bill of Lading. We will prepare these documents and provide you a full set once your shipment sails. To prepare these documents you will need to provide us a your purchase invoice and delivery note if available, and if you are going to import your items under a company name we will need the company’s details including the registration number and if the items are to be declared to the Customs under your personal name we will need your particulars incuding your ID card number. 
+            </p>
+            </div>
+    </div>    
 </div>
 </div>
 <div id="footer">
@@ -57,6 +87,22 @@
         <a href="https://www.facebook.com/Supply-Matters-Sdn-Bhd-130729460306403/" target="_blank"><img src="assets/img/Facebook-icon.svg" width="70px"></a>
     </div>
 </div>
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        this.classList.toggle("active-dropdown");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+        } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+        } 
+    });
+    }
+</script>
 <script src="assets/js/script.js"></script>
 </body>
 </html>
