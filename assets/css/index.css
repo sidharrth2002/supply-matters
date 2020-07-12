@@ -203,9 +203,9 @@ color: black;
 
 @media screen and (min-width: 2560px) {
     li a {
-        font-size: 1.5rem;
+        font-size: 1.5rem; 
     }
     * {
-        font-size: 2rem;
+        font-size: 2rem;!important
     }
 }
