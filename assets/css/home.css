@@ -12,7 +12,9 @@ body {
 /*Home*/
 #home {
     color: white;
-    height: 500px;
+    height: 80vh;
+    /* height: 500px; */
+    /* height: 50vh; */
     width: 100%;
     text-align: center;
     display: flex;
@@ -29,7 +31,8 @@ body {
 
 #home h2 {
     font-size: 2rem;
-    font-weight: 900;
+    /* margin: 0; */
+    /* font-weight: 900; */
 }
 
 #home button {
@@ -64,7 +67,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     /* width: 80%; */
-    margin: 0 auto;
+    padding-bottom: 5rem;
 }
 
 .description-element {
@@ -85,21 +88,6 @@ body {
     color: black;
     transition: 0.4s;
     border: 2px black solid;
-}
-
-/* About */
-
-/* Projects */
-
-.projects-photo-grid {
-    display: flex;
-    width: 70%;
-    margin: 0 auto;
-}
-
-.projects-child {
-    width: 250px;
-    height: 250px;
 }
 
 @media screen and (max-width: 767px) {
