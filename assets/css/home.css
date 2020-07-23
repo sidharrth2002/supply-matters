@@ -86,10 +86,9 @@ body {
 
 @media screen and (max-width: 767px) {
     #home h1 {
-        font-size: 4rem; !important
+        font-size: 4rem !important;
     }
     #description {
-        /* display: block; */
         width: 100%;
     }
     .description-element {

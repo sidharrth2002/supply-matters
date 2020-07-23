@@ -25,12 +25,8 @@ h1 {
 }
 
 #header {
-    /* background-color: #ffb826; */
-/* background-color: rgb(125, 52, 235); */
-/* color: white; */
 width: 100%;
 min-height: 50px;
-/* background-color: white; */
 }
 
 ul {
@@ -52,7 +48,8 @@ text-decoration: none;
 color: white;
 /* font-size: 1.3vw; */
 font-size: 1.3rem;
-border-radius: 4px;
+/* border-radius: 4px; */
+/* padding: 10px; */
 padding: 1rem;
 }
 
@@ -205,7 +202,7 @@ color: black;
     li a {
         font-size: 1.5rem; 
     }
-    * {
+    html {
         font-size: 2rem;!important
     }
 }
